@@ -1,10 +1,7 @@
 dependencies:
   - python=3
   - pip:
-    - spacy
-    - ipykernel
-    - scipy
+    - pandas
     - numpy
-    - scikit-learn
+    - sklearn
     - matplotlib
-    - thinc
