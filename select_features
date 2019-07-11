@@ -1,0 +1,18 @@
+from sklearn.neighbors import LocalOutlierFactor
+
+class sklearn.neighbors.LocalOutlierFactor(n_neighbors=20, algorithm=’auto’, leaf_size=30, metric=’minkowski’, p=2, metric_params=None, contamination=0.1, n_jobs=1)
+1）主要参数
+       n_neighbors : 
+                 设置k，default=20
+       contamination : 
+                 设置样本中异常点的比例，default=0.1
+2）主要属性：
+       negative_outlier_factor_ : numpy array, shape (n_samples,)
+                 和LOF相反的值，值越小，越有可能是异常点。（注：上面提到LOF的值越接近1，越可能是正常样本，LOF的值越大于1，则越可能是异常样本）。这里就正好反一下。
+3）主要函数：
+        fit_predict(X)
+                  X : array-like, shape (n_samples, n_features
+                  返回一个数组，-1表示异常点，1表示正常点。
+
+
+
